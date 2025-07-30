@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dunyodagi Yagona Video</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: url(загруженное\ \(1\).gif) no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: rgba(50, 0, 0, 0.85);
+      padding: 20px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 450px; /* ❗ Kompyuterda ko‘p kengaymasligi uchun max-width kichikroq */
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    }
+
+    .video-wrapper {
+      border: 4px solid yellow;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1 1 45%;
+      background-color: darkred;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: crimson;
+    }
+
+    .back-btn {
+      background-color: #ffa500;
+      color: black;
+      margin-top: 15px;
+      flex: 1 1 100%;
+    }
+
+    @media (max-width: 500px) {
+      .btn {
+        flex: 1 1 100%;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="video-wrapper">
+      <video controls>
+        <source src="IMG_8857.MOV" type="video/mp4">
+        Brauzeringiz video formatni qo‘llab-quvvatlamaydi.
+      </video>
+    </div>
+
+    <div class="buttons">
+      <button class="btn">❤️ Like</button>
+      <a href="index4.html"><button class="btn">🚫 Shikoyat</button></a>
+      <a href="index.html"><button class="btn back-btn" onclick="history.back()">⬅ Orqaga qaytish</button></a>
+    </div>
+  </div>
+
+</body>
+</html>

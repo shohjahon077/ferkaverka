@@ -90,6 +90,7 @@
 
 /* Navbar asosiy */
 .navbar {
+  border: 1px solid rgb(133, 0, 0);
   position: fixed;
   top: 0;
   left: 0;
@@ -225,4 +226,25 @@
 .contact-item a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
